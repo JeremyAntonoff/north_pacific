@@ -1,0 +1,24 @@
+{
+  "name": "north_pacific",
+  "version": "1.0.0",
+  "description": "A full stack website for North Pacific Restaurant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyAntonoff/north_pacific.git"
+  },
+  "author": "Jeremy Antonoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeremyAntonoff/north_pacific/issues"
+  },
+  "homepage": "https://github.com/JeremyAntonoff/north_pacific#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
+}
