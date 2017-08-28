@@ -99,6 +99,37 @@ body {
   font-size: 20px
 }
 
+.message-update {
+  text-align: center;
+  padding: 5px;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  font-size: 40px;
+  height: 150px;
+  border: 5px solid #41d4ea;
+  color: #41d4ea;
+  border-radius: 5px;
+}
+
+.message-update p {
+  font-size: 24px;
+  color: white;
+}
+
+.failed {
+  text-align: center;
+  padding: 5px;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  font-size: 40px;
+  height: 150px;
+  border: 5px solid #db2043;
+  color: #db2043;
+  border-radius: 5px;
+}
+
 #logo {
   width: 300px;
   height: 100px;
@@ -110,6 +141,7 @@ body {
   height: 5px;
   background-color: #41d4ea;
 }
+
 
 #navgen {
   padding-top: 45px;
@@ -168,7 +200,7 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
 
 #reservations {
   padding: 15px;
-  height: 100%;
+  height: 250px;
   background: #222;
 }
 
@@ -202,7 +234,7 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
 
 #contact {
   padding: 15px;
-  height: 100%;
+  height: 250px;
   background: #222;
 }
 
@@ -243,6 +275,7 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
   background-color: #41d4ea;
 }
 
+
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
   #logo {
     width: 200px;
@@ -276,7 +309,6 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
 }
 
 @media only screen and (max-width: 700px) {
-
   .text-center {
     text-align: left;
   }
@@ -312,7 +344,7 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
     margin-top: 5px;
     color: white;
   }
-  
+
   #logo {
     width: 200px;
     height: 75px;
@@ -325,8 +357,8 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
     width: 95%
   }
 
-  #contact h2 {
-    margin: 10px;
+  #reservations {
+    height: 100%;
   }
   #reservations input {
     width: 98%;
@@ -357,6 +389,14 @@ box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
   #map {
     margin: 0px;
     width: 100%;
+  }
+
+  #contact {
+    height: 100%;
+  }
+
+  #contact h2 {
+    margin: 10px;
   }
 
   #contact-info {
