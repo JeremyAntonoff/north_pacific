@@ -9,7 +9,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 app.get("/", function(req, res) {
-  res.render("index")
+  res.render("index", {page: 'home'})
+});
+
+app.get("/menu", function(req, res) {
+  res.render("menu", {page: 'menu'})
 });
 
 app.post("/contact", function(req, res) {
