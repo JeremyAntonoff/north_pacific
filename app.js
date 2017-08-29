@@ -16,6 +16,10 @@ app.get("/menu", function(req, res) {
   res.render("menu", {page: 'menu'})
 });
 
+app.get("/story", function(req, res) {
+  res.render("story", {page: 'story'})
+});
+
 app.post("/contact", function(req, res) {
   const nodemailer = require('nodemailer');
   let transporter = nodemailer.createTransport({
