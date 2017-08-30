@@ -20,6 +20,11 @@
     "body-parser": "^1.17.2",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
-    "nodemailer": "^4.0.1"
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.9",
+    "nodemailer": "^4.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.2.1"
   }
 }
