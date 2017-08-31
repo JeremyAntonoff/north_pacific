@@ -1,70 +1,70 @@
 <% include ./partials/header.ejs %>
-  <div id="carousel-example-generic" class="carousel slide page" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="/imgs/first.jpg" alt="Slide 1">
-          <div class="header1-text">
-            <div class="col-md-12 text-center">
-              <h2>
-                <span><strong>"Incredible food. Magnificent Service."</strong></span>
-              </h2>
-              <h3>
-                <span>- The Big Food Times</span>
-              </h3>
-              <br>
-            </div>
-        </div>
-          <div class = "carousel-content"></div>
-        </div>
-        <div class="item">
-          <img src="/imgs/second.jpg" alt="Slide 2">
-          <div class="header-text">
-            <div class="col-md-12 text-center">
-              <h2>
-               <span><strong>New This Season!</strong></span>
-              </h2>
-              <h3>
-               <span>Fresh Stone Crab</span>
-              </h3>
-              <br>
-           </div>
-         </div>
-        </div>
-        <div class="item">
-          <img src="/imgs/third.jpg" alt="Slide 3">
-          <div class="header-text">
-           <div class="col-md-12 text-center">
-             <h2>
-               <span><strong>The Freshest Catch!</strong></span>
-             </h2>
-             <h3>
-               <span>Delivered Daily</span>
-             </h3>
-             <br>
+<div id="carousel-images" class="carousel slide page" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-images" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-images" data-slide-to="1"></li>
+      <li data-target="#carousel-images" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/imgs/first.jpg" alt="Slide 1">
+        <div class="slide1-text">
+          <div class="col-md-12 text-center">
+            <h2>
+              <span><strong>"Incredible food. Magnificent Service."</strong></span>
+            </h2>
+            <h3>
+              <span>- The Big Food Times</span>
+            </h3>
+            <br>
           </div>
+      </div>
+        <div class = "carousel-content"></div>
+      </div>
+      <div class="item">
+        <img src="/imgs/second.jpg" alt="Slide 2">
+        <div class="otherslides-text">
+          <div class="col-md-12 text-center">
+            <h2>
+             <span><strong>New This Season!</strong></span>
+            </h2>
+            <h3>
+             <span>Fresh Stone Crab</span>
+            </h3>
+            <br>
+         </div>
+       </div>
+      </div>
+      <div class="item">
+        <img src="/imgs/third.jpg" alt="Slide 3">
+        <div class="otherslides-text">
+         <div class="col-md-12 text-center">
+           <h2>
+             <span><strong>The Freshest Catch!</strong></span>
+           </h2>
+           <h3>
+             <span>Delivered Daily</span>
+           </h3>
+           <br>
         </div>
       </div>
     </div>
   </div>
-  <div class = "container" id = "maincontent">
-    <div class= "row">
-      <div class = "col-lg-6">
-        <div id = "info-box">
-          <h2>Only The Freshest!</h2>
-          <button class = "btn btn-info fp-button"><a href="/story"><h3>READ OUR STORY</a></h3></a></button>
-        </div>
+</div>
+<div class = "container" id = "maincontent">
+  <div class= "row">
+    <div class = "col-lg-6">
+      <div id = "info-box">
+        <h2>Only The Freshest</h2>
+        <button class = "btn btn-info fp-button"><a href="/story"><h3>READ OUR STORY</a></h3></a></button>
       </div>
-      <div class = "col-lg-6">
-        <div id = "info-box2">
-          <h2>Let's enjoy Dinner</h2>
-          <button class = "btn btn-info fp-button"><a href="/menu"><h3>VIEW OUR MENU</h3></a></button>
-        </div>
+    </div>
+    <div class = "col-lg-6">
+      <div id = "info-box2">
+        <h2>Let's Enjoy Dinner</h2>
+        <button class = "btn btn-info fp-button"><a href="/menu"><h3>VIEW OUR MENU</h3></a></button>
       </div>
     </div>
   </div>
+</div>
 <% include ./partials/footer.ejs %>
