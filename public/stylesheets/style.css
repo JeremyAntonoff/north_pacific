@@ -624,7 +624,9 @@ a:hover {
     background: white;
     margin: 20px auto 50px auto;
   }
-
+  #maincontent .row {
+    margin: 0px
+  }
   #reservations {
     height: 100%;
   }
