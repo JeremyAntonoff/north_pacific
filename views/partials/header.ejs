@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>North Pacific Restaurant</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
@@ -19,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img id="logo" src = "/imgs/logo.png">
+          <a href="/"><img id="logo" src = "/imgs/logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right" id="navgen">
@@ -38,3 +39,10 @@
         </div>
       </div>
     </nav>
+    <div  id = "flash-messages">
+      <% if (error && error.length > 0) { %>
+      <div class = "alert alert-danger"><%=error%></div>
+      <% } else if (success && success.length > 0) { %>
+      <div class = "alert alert-success"><%=success%></div>
+      <% } %>
+    </div>
