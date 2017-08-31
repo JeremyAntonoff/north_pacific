@@ -45,6 +45,8 @@ router.get("/logout",function(req, res) {
 router.post("/", isLoggedIn, upload.single("image"), function(req, res, next) {
   if (req.file) {
     req.body.blog.image = req.file.filename;
+  } else {
+    req.body.blog.image = "/water.jpg"
   }
   Blog.create(req.body.blog, function(err, blog) {
     if (err) {
