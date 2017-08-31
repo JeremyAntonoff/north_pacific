@@ -1,13 +1,13 @@
 $('#form').submit(function(event) {
   event.preventDefault();
   submit();
-})
+});
 
 function submit() {
-  var name = $("#name").val();
-  var phone = $("#phone").val();
-  var message = $("#message").val();
-  var info = {name: name, phone: phone, message: message}
+  let name = $("#name").val();
+  let phone = $("#phone").val();
+  let message = $("#message").val();
+  let info = {name: name, phone: phone, message: message}
   $.ajax({
     type: "POST",
     url: "http://localhost:3000/contact",
@@ -32,18 +32,18 @@ function success() {
 function failed() {
   $("#form").hide();
   $("#resHeader").hide();
-  $(".message-update").addClass("failed")
+  $(".message-update").addClass("contact-form-failed");
   $(".message-update").fadeIn(3000);
   $(".message-update").html('<h2>' + 'UH OH! SOMETHING WENT WRONG!' + '</h2><p>' + 'Please call us @ 555-555-2849' +'</p>');
 }
 
 function initMap() {
-  var uluru = {lat: -25.363, lng: 131.044};
-  var map = new google.maps.Map(document.getElementById('map'), {
+  let uluru = {lat: 27.751473, lng: -82.629998};
+  let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: uluru
   });
-  var marker = new google.maps.Marker({
+  let marker = new google.maps.Marker({
     position: uluru,
     map: map
   });
