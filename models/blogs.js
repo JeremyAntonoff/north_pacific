@@ -1,9 +1,10 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var blogSchema = new mongoose.Schema({
+const blogSchema = new mongoose.Schema({
   title: String,
   body: String,
-  image: String
+  image: String,
+  createdAt: {type: Date, default: Date.now}
 })
 
 module.exports = mongoose.model("Blog", blogSchema);
