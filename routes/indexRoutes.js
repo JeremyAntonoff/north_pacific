@@ -20,7 +20,7 @@ router.post("/contact", function(req, res) {
       port: 465,
       secure: true,
       auth: {
-          user: process.env.mailerUSERS,
+          user: process.env.mailerUSER,
           pass: process.env.mailerPASS
       }
   });
