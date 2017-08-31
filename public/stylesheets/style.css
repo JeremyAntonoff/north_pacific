@@ -189,6 +189,16 @@ body {
   border-radius: 5px;
 }
 
+#buttonsubmit {
+  margin-bottom: 10px;
+  background: #41d4ea;
+  color: black;
+}
+
+#buttonsubmit:hover, #buttonsubmit:focus, #buttonsubmit:active {
+  background: #87f7ff;
+  color: black;
+}
 
 #logo {
   width: 300px;
@@ -325,6 +335,61 @@ body {
   height: 370px;
 }
 
+#blog-form {
+  width: 55%;
+  color: black;
+  background: white;
+  margin: 140px auto 50px auto;
+  padding: 0px 0px 20px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 14px 71px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 14px 71px -8px rgba(0,0,0,0.75);
+  box-shadow: -1px 14px 71px -8px rgba(0,0,0,0.75);
+}
+
+#blog-form label {
+  margin: 0 auto;
+  color: black;
+  font-size: 14px;
+}
+
+
+#blogImg {
+  padding-top: 0px;
+  width: 100%;
+  height: 300px;
+  border: 3px solid #41d4ea;
+  border-top: 0px;
+
+}
+#blog-content {
+  padding: 10px;
+}
+
+#blog-body {
+  height: 200px;
+  font-size: 20px;
+  padding: 15px;
+}
+#blog-head {
+  color: black;
+  background: #41d4ea;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#blog-head-index {
+  color: black;
+  background: #41d4ea;
+  margin-bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
 #reservations {
   padding: 15px;
   height: 250px;
@@ -410,12 +475,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #logo {
-    width: 220px;
-    height: 80px;
-    padding-top: 0px;
-  }
-
   .page {
     margin-top: 100px;
     padding: 0px;
@@ -443,6 +502,18 @@ body {
       font-size: 40px;
       margin-top: 5px;
       color: white;
+  }
+
+  #logo {
+    width: 220px;
+    height: 80px;
+    padding-top: 0px;
+  }
+
+  #blog-form {
+    width: 80%;
+    background: white;
+    margin: 130px auto 50px auto;
   }
 }
 
@@ -509,6 +580,12 @@ body {
     margin-top: 50px;
     padding: 0px;
     width: 95%
+  }
+
+  #blog-form {
+    width: 90%;
+    background: white;
+    margin: 100px auto 50px auto;
   }
 
   #reservations {
