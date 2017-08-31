@@ -1,13 +1,20 @@
 <% include ../partials/header.ejs %>
+<div class ="margin"></div>
+<% blogs.reverse() %>
 <% blogs.forEach(function(blog) { %>
-<div class = "container" id = "blog-form">
-  <div id = "blog-head-index">
-    <h1> <%=blog.title%></h1>
-  </div>
+  <div class = "container" id = "blog-form">
+    <div id = "blog-head-index">
+      <h1> <%=blog.title%></h1>
+      <p>Created <%=moment(blog.createdAt).fromNow() %> by <em>North Pacific Owner</em></p>
+    </div>
     <img id="blogImg" class= "img-responsive"  src="/imgs/uploads/<%=blog.image%>">
     <div id ="blog-content"><%-blog.body.substr(0,200) + "..."%></div>
     <a href="/blog/<%=blog._id%>"><button id="buttonsubmit" class="btn btn-info btn-block">READ MORE</button></a>
   </div>
-</div>
 <% }) %>
+<%if (!user) { %>
+  <div class="container">
+    <a href="/blog/login"><button  class="btn btn-info btn-block">ADMIN LOGIN</button></a>
+  </div>
+<% } %>
 <% include ../partials/footer.ejs %>
