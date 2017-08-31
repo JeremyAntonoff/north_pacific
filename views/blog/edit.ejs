@@ -4,22 +4,23 @@
 <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.5/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.5/css/froala_style.min.css' rel='stylesheet' type='text/css' />
 <div class = "container" id = "blog-form">
+  <%console.log(blog)%>
   <div id = "blog-head">
     <h1> NEW BLOG POST </h1>
   </div>
     <div class = "col-lg-12">
-      <form action="/blog" enctype="multipart/form-data" method="POST">
+      <form action="/blog/<%=blog._id%>?_method=PUT" enctype="multipart/form-data" method="POST">
         <div class="form-group">
           <label for="title">BLOG TITLE</label>
-          <input type="text" class="form-control" name="blog[title]"  placeholder="Enter a Title">
+          <input type="text" class="form-control" name="blog[title]"  value="<%=blog.title%>">
         </div>
         <div class="form-group">
           <label for="image">UPLOAD IMAGE</label>
-          <input type="file" class="form-control" name="image" placeholder="Enter email">
+          <input type="file" class="form-control" name="image" value="<%=blog.image%>">
         </div>
         <div class="form-group">
           <label for="title">BLOG TITLE</label>
-          <textarea id="blog-body" class="form-control" name="blog[body]"  placeholder="Enter a Title"></textarea>
+          <textarea id="blog-body" class="form-control" name="blog[body]"  placeholder="Enter a Title"><%=blog.body%></textarea>
         </div>
         <button id="buttonsubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
       </form>
