@@ -10,7 +10,7 @@ function submit() {
   let info = {name: name, phone: phone, message: message}
   $.ajax({
     type: "POST",
-    url: "http://localhost:3000/contact",
+    url: "/contact",
     data: info,
     success: function(text) {
       if (text === "success") {
@@ -25,16 +25,16 @@ function submit() {
 function success() {
   $("#form").hide();
   $("#resHeader").hide();
-  $(".message-update").fadeIn();
-  $(".message-update").html('<h2>' + 'YOUR MESSAGE HAS BEEN SENT' + '</h2><p>' + 'We will get back to you shortly!' +'</p>');
+  $(".contact-form-message").fadeIn();
+  $(".contact-form-message").html('<h2>' + 'YOUR MESSAGE HAS BEEN SENT' + '</h2><p>' + 'We will get back to you shortly!' +'</p>');
 }
 
 function failed() {
   $("#form").hide();
   $("#resHeader").hide();
-  $(".message-update").addClass("contact-form-failed");
-  $(".message-update").fadeIn(3000);
-  $(".message-update").html('<h2>' + 'UH OH! SOMETHING WENT WRONG!' + '</h2><p>' + 'Please call us @ 555-555-2849' +'</p>');
+  $(".contact-form-message").addClass("contact-form-failed");
+  $(".contact-form-message").fadeIn(3000);
+  $(".contact-form-message").html('<h2>' + 'UH OH! SOMETHING WENT WRONG!' + '</h2><p>' + 'Please call us @ 555-555-2849' +'</p>');
 }
 
 function initMap() {
