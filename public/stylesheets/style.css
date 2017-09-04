@@ -42,6 +42,10 @@ a:hover {
   box-shadow: -1px 14px 71px -8px rgba(0,0,0,0.75);
 }
 
+.row {
+  margin: 0px;
+}
+
 .slide1-text {
   margin-top: 50px;
     position: absolute;
