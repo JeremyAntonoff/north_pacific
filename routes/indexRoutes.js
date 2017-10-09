@@ -16,9 +16,7 @@ router.get("/story", function(req, res) {
 router.post("/contact", function(req, res) {
   const nodemailer = require('nodemailer');
   let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      service: 'Gmail',
       auth: {
           user: process.env.mailerUSER,
           pass: process.env.mailerPASS
