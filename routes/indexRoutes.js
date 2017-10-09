@@ -17,7 +17,7 @@ router.post("/contact", function(req, res) {
   console.log(process.env.mailerUSER, process.env.mailerPASS)
   const nodemailer = require('nodemailer');
   let transporter = nodemailer.createTransport({
-      service: 'Gmail',
+      service: 'Yandex',
       auth: {
           user: process.env.mailerUSER,
           pass: process.env.mailerPASS
