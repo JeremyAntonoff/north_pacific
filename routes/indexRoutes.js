@@ -14,6 +14,7 @@ router.get("/story", function(req, res) {
 });
 
 router.post("/contact", function(req, res) {
+  console.log(process.env.mailerUSER, process.env.mailerPASS)
   const nodemailer = require('nodemailer');
   let transporter = nodemailer.createTransport({
       service: 'Gmail',
@@ -32,6 +33,7 @@ router.post("/contact", function(req, res) {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
+      console.log(error);
       res.end('failure');
     } else {
     console.log('message-sent')
