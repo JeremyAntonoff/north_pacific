@@ -17,7 +17,7 @@ router.post("/contact", function(req, res) {
   console.log(process.env.mailerUSER, process.env.mailerPASS)
   const nodemailer = require('nodemailer');
   let transporter = nodemailer.createTransport({
-      service: 'Yandex',
+      service: 'Outlook365',
       auth: {
           user: process.env.mailerUSER,
           pass: process.env.mailerPASS
@@ -25,7 +25,7 @@ router.post("/contact", function(req, res) {
   });
 
   let mailOptions = {
-      from: 'northpacificrestaurant@yandex.com',
+      from: 'northpacificrestaurant@outlook.com',
       to: 'northpacificrestaurant@gmail.com',
       subject: 'North Pacific Contact Form',
       html: '<h2>' + req.body.name + '<br></h2><h3>' + req.body.phone + '<br><br>' + req.body.message  + '</h3></h2>'
