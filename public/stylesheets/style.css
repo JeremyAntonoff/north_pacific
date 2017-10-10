@@ -113,12 +113,14 @@ a:hover {
   color: black;
   width: 200px;
   height: 55px;
+  font-size: 16px;
   padding-right: 5px;
-  padding-top: 0.5px;
+  padding-top: 15px;
   margin: 24px auto;
   transition: transform ease 1s;
 }
 .fp-button:hover {
+  color: black;
   font-weight: 800;
   background-color: #41d4ea;
   -moz-transform: translate(0px, -5px);
@@ -130,15 +132,6 @@ a:hover {
   -webkit-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
-}
-
-.fp-button a {
-  text-decoration: none;
-  color: black
-}
-
-.fp-button h3 {
-  font-size: 16px;
 }
 
 .menu-header {
