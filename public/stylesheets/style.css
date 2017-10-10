@@ -56,36 +56,36 @@ a:hover {
 }
 
 .slide1-text h2 {
-    font-size: 40px;
-    color: #a4f0fc;
+  font-size: 40px;
+  color: #a4f0fc;
 }
 
 .slide1-text h3 {
-    font-size: 30px;
-    color: #41d4ea;
-    margin-top: 5px;
-    color: white;
+  font-size: 30px;
+  color: #41d4ea;
+  margin-top: 5px;
+  color: white;
 }
 
 .otherslides-text {
   margin-top: 50px;
-    position: absolute;
-    top: 100px;
-    left: 28%;
-    right: auto;
-    width: 96.66666666666666%;
-    color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 28%;
+  right: auto;
+  width: 96.66666666666666%;
+  color: #fff;
 }
 
 .otherslides-text h2 {
-    font-size: 60px;
-    color: #a4f0fc
+  font-size: 60px;
+  color: #a4f0fc
 }
 
 .otherslides-text h3 {
-    font-size: 50px;
-    margin-top: 5px;
-    color: white;
+  font-size: 50px;
+  margin-top: 5px;
+  color: white;
 }
 
 .carousel-content {
@@ -117,15 +117,16 @@ a:hover {
   padding-right: 5px;
   padding-top: 15px;
   margin: 24px auto;
+  -webkit-transition: transform ease 1s;
+  -moz-transition: transform ease 1s;
   transition: transform ease 1s;
 }
+
 .fp-button:hover {
   color: black;
   font-weight: 800;
   background-color: #41d4ea;
-  -moz-transform: translate(0px, -5px);
-  -moz-transform: translate(0px, -5px);
-  -moz-transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px);
   -moz-transform: translate(0px, -5px);
   transform:  translate(0px, -5px);
   border: 1px solid black;
@@ -248,10 +249,10 @@ a:hover {
   -moz-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.75);
   -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: transform ease 0.5s;;
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: transform ease 0.5s;;
 }
 
 #info-box:hover {
@@ -261,6 +262,7 @@ a:hover {
   -o-transform:scale(1.25); /* Opera */
   transform:scale(1.05)
 }
+
 #info-box2 {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../imgs/dinner.jpg);
   -webkit-background-size: cover;
@@ -295,11 +297,11 @@ a:hover {
 }
 
 #menu {
-    background: white;
-    margin-top: 0px;
-    padding: 0px;
-    border-left: 15px solid #41d4ea;
-    border-right: 15px solid #41d4ea;
+  background: white;
+  margin-top: 0px;
+  padding: 0px;
+  border-left: 15px solid #41d4ea;
+  border-right: 15px solid #41d4ea;
 }
 
 #storybg {
@@ -330,6 +332,7 @@ a:hover {
   padding: 20px;
   font-size: 24px;
 }
+
 #storybgimg {
   background: url(/imgs/storybg.jpg);
   background-size: cover;
@@ -357,15 +360,14 @@ a:hover {
   font-size: 14px;
 }
 
-
 #blogImg {
   padding-top: 0px;
   width: 100%;
   height: 300px;
   border: 3px solid #41d4ea;
   border-top: 0px;
-
 }
+
 #blog-content {
   padding: 10px;
 }
@@ -375,6 +377,7 @@ a:hover {
   font-size: 20px;
   padding: 15px;
 }
+
 #blog-head {
   color: black;
   background: #41d4ea;
@@ -404,7 +407,6 @@ a:hover {
   color: white;
 }
 
-
 #reservations {
   padding: 15px;
   height: 250px;
@@ -419,6 +421,7 @@ a:hover {
   padding: 5px;
   border-radius: 5px
 }
+
 #reservations textarea {
   color: black;
   width: 96.5%;
@@ -479,7 +482,6 @@ a:hover {
 
 #bottom  {
   padding: 0px;
-
 }
 
 #line {
@@ -516,14 +518,14 @@ a:hover {
   }
 
   .otherslides-text h2 {
-      font-size: 36px;
-      color: #a4f0fc;
+    font-size: 36px;
+    color: #a4f0fc;
   }
 
   .otherslides-text h3 {
-      font-size: 32px;
-      margin-top: 5px;
-      color: white;
+    font-size: 32px;
+    margin-top: 5px;
+    color: white;
   }
 
   #logo {
@@ -559,8 +561,8 @@ a:hover {
 
   .slide1-text h2 {
     text-align: center;
-      font-size: 21px;
-      color: #a4f0fc;
+    font-size: 21px;
+    color: #a4f0fc;
   }
 
   .slide1-text h3 {
@@ -630,6 +632,7 @@ a:hover {
     background: white;
     margin: 20px auto 50px auto;
   }
+
   #maincontent .row {
     margin: 0px
   }
