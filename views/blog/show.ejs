@@ -1,18 +1,17 @@
 <% include ../partials/header.ejs %>
 <div class ="margin"></div>
-  <div class = "container" id = "blog-form">
-    <div id = "blog-head-index">
-      <h1> <%=blog.title%></h1>
-      <p>Created <%=moment(blog.createdAt).fromNow() %> by <em>North Pacific Owner</em></p>
-    </div>
-      <img id="blogImg" class= "img-responsive"  src="/imgs/uploads/<%=blog.image%>">
-      <div id ="blog-content"><%-blog.body%></div>
-      <% if (user) { %>
-          <a href="/blog/<%=blog._id%>/edit"><button id="buttonsubmit" class="btn btn-info btn-block">EDIT BLOG</button></a>
-        <form action="/blog/<%=blog._id%>?_method=DELETE" method="POST">
-          <a href="/blog/<%=blog._id%>"><button class="btn btn-danger btn-block">DELETE BLOG</button></a>
-        </form>
-      <% } %>
-    </div>
+<section class = "container" id = "blog-form">
+  <div id = "blog-head-index">
+    <h1> <%=blog.title%></h1>
+    <p>Created <%=moment(blog.createdAt).fromNow() %> by <em>North Pacific Owner</em></p>
   </div>
+  <img id="blogImg" class= "img-responsive"  src="/imgs/uploads/<%=blog.image%>" alt="blog image">
+  <div id ="blog-content"><%-blog.body%></div>
+  <% if (user) { %>
+    <a href="/blog/<%=blog._id%>/edit"><button id="buttonsubmit" class="btn btn-info btn-block">EDIT BLOG</button></a>
+    <form action="/blog/<%=blog._id%>?_method=DELETE" method="POST">
+    <a href="/blog/<%=blog._id%>"><button class="btn btn-danger btn-block">DELETE BLOG</button></a>
+    </form>
+  <% } %>
+</section>
 <% include ../partials/footer.ejs %>

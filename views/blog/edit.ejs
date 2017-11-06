@@ -1,30 +1,27 @@
 <% include ../partials/header.ejs %>
 <script src="https://cdn.ckeditor.com/4.7.2/standard/ckeditor.js"></script>
 <div class ="margin"></div>
-<div class = "container" id = "blog-form">
+<section class = "container" id = "blog-form">
   <div id = "blog-head">
     <h1> EDIT BLOG POST </h1>
   </div>
-    <div class = "col-lg-12">
-      <form action="/blog/<%=blog._id%>?_method=PUT" enctype="multipart/form-data" method="POST">
-        <div class="form-group">
-          <label for="title">BLOG TITLE</label>
-          <input type="text" class="form-control" name="blog[title]"  value="<%=blog.title%>">
-        </div>
-        <div class="form-group">
-          <label for="image">UPLOAD IMAGE</label>
-          <input type="file" class="form-control" name="image" value="<%=blog.image%>">
-        </div>
-        <div class="form-group">
-          <label for="title">BLOG TITLE</label>
-          <textarea id="blog-body" class="form-control" name="blog[body]"  placeholder="Enter a Title"><%=blog.body%></textarea>
-          <script>
-            CKEDITOR.replace( 'blog[body]' );
-        </script>
-        </div>
-        <button id="buttonsubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
-      </form>
-    </div>
-</div>
-
+  <div class = "col-lg-12">
+    <form action="/blog/<%=blog._id%>?_method=PUT" enctype="multipart/form-data" method="POST">
+      <div class="form-group">
+        <label for="title">BLOG TITLE</label>
+        <input type="text" class="form-control" name="blog[title]"  value="<%=blog.title%>">
+      </div>
+      <div class="form-group">
+        <label for="image">UPLOAD IMAGE</label>
+        <input type="file" class="form-control" name="image" value="<%=blog.image%>">
+      </div>
+      <div class="form-group">
+        <label for="title">BLOG TITLE</label>
+        <textarea id="blog-body" class="form-control" name="blog[body]"  placeholder="Enter a Title"><%=blog.body%></textarea>
+        <script>CKEDITOR.replace('blog[body]')</script>
+      </div>
+      <button id="buttonsubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+</section>
 <% include ../partials/footer.ejs %>

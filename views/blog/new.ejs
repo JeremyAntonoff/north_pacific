@@ -1,7 +1,7 @@
 <% include ../partials/header.ejs %>
 <script src="https://cdn.ckeditor.com/4.7.2/standard/ckeditor.js"></script>
 <div class ="margin"></div>
-<div class = "container" id = "blog-form">
+<section class = "container" id = "blog-form">
   <div id = "blog-head">
     <h1> NEW BLOG POST </h1>
   </div>
@@ -18,12 +18,12 @@
         <div class="form-group">
           <label for="title">BLOG TITLE</label>
           <textarea id="blog-body" class="form-control" name="blog[body]"  placeholder="Enter a Title"></textarea>
-          <script>
-            CKEDITOR.replace( 'blog[body]' );
-        </script>
+          <script>CKEDITOR.replace('blog[body]')</script>
+
+
         </div>
         <button id="buttonsubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
       </form>
     </div>
-</div>
+</section>
 <% include ../partials/footer.ejs %>

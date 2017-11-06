@@ -1,16 +1,16 @@
 <% include ../partials/header.ejs %>
 <div class ="margin"></div>
 <% blogs.reverse() %>
-<% blogs.forEach(function(blog) { %>
-  <div class = "container" id = "blog-form">
+<% blogs.forEach(blog => { %>
+  <article class = "container" id = "blog-form">
     <div id = "blog-head-index">
       <h1> <%=blog.title%></h1>
       <p>Created <%=moment(blog.createdAt).fromNow() %> by <em>North Pacific Owner</em></p>
     </div>
-    <img id="blogImg" class= "img-responsive"  src="/imgs/uploads/<%=blog.image%>">
+    <img id="blogImg" class= "img-responsive"  src="/imgs/uploads/<%=blog.image%>" alt="blog image">
     <div id ="blog-content"><%-blog.body.substr(0,200) + "..."%></div>
     <a href="/blog/<%=blog._id%>"><button id="buttonsubmit" class="btn btn-info btn-block">READ MORE</button></a>
-  </div>
+  </article>
 <% }) %>
 <%if (!user) { %>
   <div class="container">
