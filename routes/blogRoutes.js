@@ -4,14 +4,14 @@ const multer = require('multer');
 const Blog = require('../models/blogs');
 const passport = require('passport');
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
+  destination: function(req, file, cb) {
     cb(null, './public/imgs/uploads/');
   },
-  filename: (req, file, cb) => {
+  filename: function(req, file, cb) {
     cb(null, Date.now() + '.jpg');
   }
 });
-let upload = multer({ storage });
+const upload = multer({ storage: storage });
 
 router.get('/', (req, res) => {
   Blog.find({}, (err, foundBlogs) => {
